@@ -1,0 +1,27 @@
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.12s ease;
+  border-left: 4px solid #ccc;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.completed {
+  border-left-color: #4caf50;
+}
+
+.notCompleted {
+  border-left-color: #f44336;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+  word-break: break-word;
+}
