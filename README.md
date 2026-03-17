@@ -1,16 +1,38 @@
-# React + Vite
+# Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Простое приложение для просмотра и фильтрации задач, созданное с использованием React и публичного API JSONPlaceholder.
 
-Currently, two official plugins are available:
+Цель проекта — закрепить навыки работы с React (хуки, компоненты, состояние, условный рендеринг, мемоизация), обработкой асинхронных запросов и базовой стилизацией.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Возможности
 
-## React Compiler
+- Загрузка списка задач (первые 15) из API
+- Поиск по названию задачи
+- Фильтрация по статусу (все / выполненные / невыполненные)
+- Просмотр детальной информации о задаче в модальном окне
+  - включая имя и email пользователя
+- Обработка состояний: загрузка, ошибка, ничего не найдено
+- Адаптивный и минималистичный интерфейс
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Технологии
 
-## Expanding the ESLint configuration
+- **React** 18 (хуки: useState, useEffect, useMemo)
+- **Fetch API** для запросов
+- **CSS Modules** для компонентной стилизации
+- Публичные API:  
+  https://jsonplaceholder.typicode.com/todos  
+  https://jsonplaceholder.typicode.com/users
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Установка и запуск
+
+```bash
+# клонировать репозиторий
+git clone https://github.com/assaup/todo-app.git
+
+# перейти в папку проекта
+cd todo-app
+
+# установить зависимости
+npm install
+# или
+yarn install
